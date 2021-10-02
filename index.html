@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!--Bootstrap linked-->
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <!--Style Sheet linked-->
+
+  <link rel ="stylesheet"type="text/css"href="style.css">
+  
+
+  <title>Converter</title>
+
+</head>
+<body>
+
+  <body>
+    <div class="container"> <!--For it to be center - container and offset middle 3 value-->
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+
+
+
+          <!--Weight Converter-->
+
+
+      <h1 class="display-4 text-center mb-5">Weight Converter</h1>
+
+      <form>
+        <div class="form-group">
+          <input
+            id="kgInput"
+            type="number"
+            class="form-control form-control-lg"
+            placeholder="Enter in Kilograms...">
+        </div>
+      </form>
+
+      <div id="output">
+
+        <div class="card bg-primary mb-2">
+          <div class="card-block">
+
+            <h4>Grams:</h4>
+            <div id="gramsOutput"></div>
+
+          </div>
+        </div>
+
+        <div class="card bg-success mb-2">
+          <div class="card-block">
+
+            <h4>Pounds:</h4>
+            <div id="lbsOutput"></div>
+            
+          </div>
+        </div>
+
+        <div class="card bg-danger mb-2">
+          <div class="card-block">
+
+            <h4>Ounce:</h4>
+            <div id="ozOutput"></div>
+            
+          </div>
+        </div>
+
+        <div class="card bg-info mb-5">
+          <div class="card-block">
+
+            <h4>Tonne:</h4>
+            <div id="tonOutput"></div>
+            
+          </div>
+        </div>
+
+        
+      </div><!--div Output closed-->
+
+
+
+<!--Area Converter-->
+
+
+<h1 class="display-4 text-center mb-5">Area Converter</h1>
+
+<form>
+  <div class="form-group">
+    <input
+      id="areaInput"
+      type="number"
+      class="form-control form-control-lg"
+      placeholder="Enter Area...">
+  </div>
+</form>
+
+<div id="outputArea">
+
+<div class="card bg-primary mb-2">
+  <div class="card-block">
+
+    <h4>Cent:</h4>
+    <div id="areaToCentOutput"></div>
+
+  </div>
+</div>
+
+<div class="card bg-success mb-5">
+  <div class="card-block">
+
+    <h4>Hectare:</h4>
+    <div id="areaToHectareOutput"></div>
+    
+  </div>
+</div>
+
+</div> <!--Output closed-->
+
+
+<!--Cent Converter-->
+
+<h1 class="display-4 text-center mb-5">Cent Converter</h1>
+
+<form>
+  <div class="form-group">
+    <input
+      id="centInput"
+      type="number"
+      class="form-control form-control-lg"
+      placeholder="Enter Cent...">
+  </div>
+</form>
+
+<div id="outputCent">
+  <div class="card bg-primary mb-2">
+    <div class="card-block">
+
+      <h4>Sq.Ft:</h4>
+      <div id="centToSqFtOutput"></div>
+
+    </div>
+  </div>
+
+  <div class="card bg-success mb-2">
+    <div class="card-block">
+
+      <h4>Area:</h4>
+      <div id="centToAreaOutput"></div>
+      
+    </div>
+  </div>
+
+  <div class="card bg-danger mb-2">
+    <div class="card-block">
+
+      <h4>Hectare:</h4>
+      <div id="centToHectareOutput"></div>
+      
+    </div>
+  </div>
+
+  <div class="card bg-info mb-5">
+    <div class="card-block">
+
+      <h4>Sq.Meter:</h4>
+      <div id="centToSqMeterOutput"></div>
+      
+    </div>
+  </div>
+  </div> <!--Output closed-->
+
+
+<!--Sq.meter to Sq.ft Converter-->
+
+<h1 class="display-4 text-center mb-5">Sq.Meter Converter</h1>
+
+<form>
+  <div class="form-group">
+    <input
+      id="sqMeterInput"
+      type="number"
+      class="form-control form-control-lg"
+      placeholder="Enter Sq.Meter...">
+  </div>
+</form>
+
+<div id="outputSqMeter">
+  <div class="card bg-secondary mb-5">
+    <div class="card-block">
+
+      <h4>Sq.Ft:</h4>
+      <div id="sqMeterToSqFtOutput"></div>
+
+    </div>
+  </div>
+</div>
+
+
+<!--Sq.ft to Sq.meter Converter-->
+
+<h1 class="display-4 text-center mb-5">Sq.Ft Converter</h1>
+
+<form>
+  <div class="form-group">
+    <input
+      id="sqFtInput"
+      type="number"
+      class="form-control form-control-lg"
+      placeholder="Enter Sq.Ft...">
+  </div>
+</form>
+
+<div id="outputSqFt">
+  <div class="card bg-info mb-5">
+    <div class="card-block">
+
+      <h4>Sq.Meter:</h4>
+      <div id="sqFtToSqMeterOutput"></div>
+
+    </div>
+  </div>
+</div>
+
+
+
+  </div>
+  </div>
+  </div>
+
+
+
+  <script type="module" src="main.js"></script>
+
+
+
+</body>
+</html>
